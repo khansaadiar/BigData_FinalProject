@@ -1,0 +1,485 @@
+2024-12-21 14:38:07,842 - INFO - Checking for new files in MinIO...
+2024-12-21 14:38:07,902 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv']
+2024-12-21 14:38:07,936 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:38:07,971 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:38:08,004 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:38:08,057 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:38:08,090 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:38:08,136 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:38:08,183 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:38:08,334 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:38:08,347 - INFO - Training model on combined data...
+2024-12-21 14:38:08,347 - INFO - Starting model training...
+2024-12-21 14:38:08,403 - INFO - Training model for shipping_fee...
+2024-12-21 14:38:08,790 - INFO - Model for shipping_fee has been trained.
+2024-12-21 14:38:08,796 - INFO - Evaluation Results: Shipping Fee - MAE: 1.66, RMSE: 3.81, R²: 0.64
+2024-12-21 14:38:08,799 - INFO - Waiting to check for new files...
+2024-12-21 14:43:08,902 - INFO - Checking for new files in MinIO...
+2024-12-21 14:43:08,996 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv']
+2024-12-21 14:43:09,054 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:43:09,054 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 14:43:09,090 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:43:09,090 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 14:43:09,125 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:43:09,125 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 14:43:09,184 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:43:09,184 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 14:43:09,214 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:43:09,214 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 14:43:09,242 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:43:09,243 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 14:43:09,273 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:43:09,273 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 14:43:09,293 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:43:09,295 - INFO - Training model on combined data...
+2024-12-21 14:43:09,295 - INFO - Starting model training...
+2024-12-21 14:43:09,308 - INFO - Training model for shipping_fee...
+2024-12-21 14:43:09,457 - INFO - Model for shipping_fee has been trained.
+2024-12-21 14:43:09,464 - INFO - Evaluation Results: Shipping Fee - MAE: 1.80, RMSE: 4.04, R²: 0.60
+2024-12-21 14:43:09,464 - INFO - Waiting to check for new files...
+2024-12-21 14:48:09,478 - INFO - Checking for new files in MinIO...
+2024-12-21 14:48:09,630 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv', 'batch_9_20241221_144732.csv']
+2024-12-21 14:48:09,991 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:48:09,991 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 14:48:10,087 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:48:10,087 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 14:48:10,125 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:48:10,126 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 14:48:10,213 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:48:10,213 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 14:48:10,253 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:48:10,256 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 14:48:10,313 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:48:10,313 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 14:48:10,347 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:48:10,347 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 14:48:10,393 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:48:10,407 - INFO - Columns in batch_9_20241221_144732.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:48:10,409 - INFO - Training model on combined data...
+2024-12-21 14:48:10,409 - INFO - Starting model training...
+2024-12-21 14:48:10,422 - INFO - Training model for shipping_fee...
+2024-12-21 14:48:10,581 - INFO - Model for shipping_fee has been trained.
+2024-12-21 14:48:10,587 - INFO - Evaluation Results: Shipping Fee - MAE: 1.73, RMSE: 3.89, R²: 0.67
+2024-12-21 14:48:10,589 - INFO - Waiting to check for new files...
+2024-12-21 14:53:10,601 - INFO - Checking for new files in MinIO...
+2024-12-21 14:53:10,695 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv', 'batch_9_20241221_144732.csv']
+2024-12-21 14:53:10,873 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:53:10,873 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 14:53:10,919 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:53:10,919 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 14:53:10,956 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:53:10,956 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 14:53:10,993 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:53:10,993 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 14:53:11,025 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:53:11,025 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 14:53:11,066 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:53:11,067 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 14:53:11,095 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:53:11,095 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 14:53:11,123 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:53:11,123 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 14:53:11,128 - INFO - Columns in batch_9_20241221_144732.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:53:11,128 - INFO - No new data in batch: batch_9_20241221_144732.csv. Skipping.
+2024-12-21 14:53:11,128 - INFO - Waiting to check for new files...
+2024-12-21 14:58:11,141 - INFO - Checking for new files in MinIO...
+2024-12-21 14:58:11,230 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv', 'batch_9_20241221_144732.csv']
+2024-12-21 14:58:11,285 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:58:11,285 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 14:58:11,326 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:58:11,327 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 14:58:11,358 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:58:11,358 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 14:58:11,389 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:58:11,389 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 14:58:11,418 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:58:11,418 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 14:58:11,456 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:58:11,456 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 14:58:11,484 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:58:11,484 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 14:58:11,512 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:58:11,512 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 14:58:11,517 - INFO - Columns in batch_9_20241221_144732.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 14:58:11,517 - INFO - No new data in batch: batch_9_20241221_144732.csv. Skipping.
+2024-12-21 14:58:11,517 - INFO - Waiting to check for new files...
+2024-12-21 15:03:11,529 - INFO - Checking for new files in MinIO...
+2024-12-21 15:03:11,646 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv', 'batch_9_20241221_144732.csv']
+2024-12-21 15:03:11,713 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:03:11,714 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 15:03:11,763 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:03:11,763 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 15:03:11,797 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:03:11,797 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 15:03:11,832 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:03:11,832 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 15:03:11,865 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:03:11,865 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 15:03:11,899 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:03:11,899 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 15:03:11,929 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:03:11,929 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 15:03:11,960 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:03:11,960 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 15:03:11,964 - INFO - Columns in batch_9_20241221_144732.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:03:11,964 - INFO - No new data in batch: batch_9_20241221_144732.csv. Skipping.
+2024-12-21 15:03:11,964 - INFO - Waiting to check for new files...
+2024-12-21 15:08:11,978 - INFO - Checking for new files in MinIO...
+2024-12-21 15:08:12,106 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv', 'batch_9_20241221_144732.csv']
+2024-12-21 15:08:12,182 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:08:12,183 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 15:08:12,220 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:08:12,220 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 15:08:12,248 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:08:12,248 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 15:08:12,289 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:08:12,289 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 15:08:12,316 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:08:12,316 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 15:08:12,343 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:08:12,343 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 15:08:12,377 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:08:12,377 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 15:08:12,405 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:08:12,405 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 15:08:12,410 - INFO - Columns in batch_9_20241221_144732.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:08:12,410 - INFO - No new data in batch: batch_9_20241221_144732.csv. Skipping.
+2024-12-21 15:08:12,410 - INFO - Waiting to check for new files...
+2024-12-21 15:13:12,455 - INFO - Checking for new files in MinIO...
+2024-12-21 15:13:12,522 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv', 'batch_9_20241221_144732.csv']
+2024-12-21 15:13:12,589 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:13:12,589 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 15:13:12,627 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:13:12,627 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 15:13:12,674 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:13:12,674 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 15:13:12,720 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:13:12,720 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 15:13:12,763 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:13:12,763 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 15:13:12,801 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:13:12,801 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 15:13:12,830 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:13:12,830 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 15:13:12,859 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:13:12,859 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 15:13:12,864 - INFO - Columns in batch_9_20241221_144732.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:13:12,864 - INFO - No new data in batch: batch_9_20241221_144732.csv. Skipping.
+2024-12-21 15:13:12,864 - INFO - Waiting to check for new files...
+2024-12-21 15:18:12,871 - INFO - Checking for new files in MinIO...
+2024-12-21 15:18:13,011 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv', 'batch_9_20241221_144732.csv']
+2024-12-21 15:18:13,098 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:18:13,098 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 15:18:13,128 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:18:13,128 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 15:18:13,182 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:18:13,182 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 15:18:13,212 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:18:13,212 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 15:18:13,256 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:18:13,256 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 15:18:13,296 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:18:13,297 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 15:18:13,327 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:18:13,327 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 15:18:13,360 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:18:13,360 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 15:18:13,368 - INFO - Columns in batch_9_20241221_144732.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:18:13,369 - INFO - Training model on combined data...
+2024-12-21 15:18:13,369 - INFO - Starting model training...
+2024-12-21 15:18:13,384 - INFO - Training model for shipping_fee...
+2024-12-21 15:18:13,423 - INFO - Model for shipping_fee has been trained.
+2024-12-21 15:18:13,429 - INFO - Evaluation Results: Shipping Fee - MAE: 0.00, RMSE: 0.00, R²: 1.00
+2024-12-21 15:18:13,429 - INFO - Waiting to check for new files...
+2024-12-21 15:23:13,444 - INFO - Checking for new files in MinIO...
+2024-12-21 15:23:13,557 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv', 'batch_9_20241221_144732.csv']
+2024-12-21 15:23:13,613 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:23:13,613 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 15:23:13,648 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:23:13,648 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 15:23:13,676 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:23:13,676 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 15:23:13,705 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:23:13,705 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 15:23:13,738 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:23:13,738 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 15:23:13,768 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:23:13,769 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 15:23:13,798 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:23:13,798 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 15:23:13,827 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:23:13,827 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 15:23:13,832 - INFO - Columns in batch_9_20241221_144732.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:23:13,832 - INFO - No new data in batch: batch_9_20241221_144732.csv. Skipping.
+2024-12-21 15:23:13,832 - INFO - Waiting to check for new files...
+2024-12-21 15:28:13,845 - INFO - Checking for new files in MinIO...
+2024-12-21 15:28:13,862 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv', 'batch_9_20241221_144732.csv']
+2024-12-21 15:28:13,944 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:28:13,944 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 15:28:13,993 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:28:13,993 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 15:28:14,023 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:28:14,023 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 15:28:14,050 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:28:14,050 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 15:28:14,078 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:28:14,078 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 15:28:14,106 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:28:14,106 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 15:28:14,135 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:28:14,135 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 15:28:14,165 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:28:14,165 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 15:28:14,170 - INFO - Columns in batch_9_20241221_144732.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:28:14,171 - INFO - Training model on combined data...
+2024-12-21 15:28:14,171 - INFO - Starting model training...
+2024-12-21 15:28:14,187 - INFO - Training model for shipping_fee...
+2024-12-21 15:28:14,273 - INFO - Model for shipping_fee has been trained.
+2024-12-21 15:28:14,277 - INFO - Evaluation Results: Shipping Fee - MAE: 0.00, RMSE: 0.00, R²: 1.00
+2024-12-21 15:28:14,278 - INFO - Waiting to check for new files...
+2024-12-21 15:30:01,582 - INFO - Checking for new files in MinIO...
+2024-12-21 15:30:01,695 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv', 'batch_9_20241221_144732.csv']
+2024-12-21 15:30:01,746 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:30:01,782 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:30:01,810 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:30:01,848 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:30:01,877 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:30:01,918 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:30:01,946 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:30:01,981 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:30:01,993 - INFO - Columns in batch_9_20241221_144732.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:30:01,999 - INFO - Training model on combined data...
+2024-12-21 15:30:01,999 - INFO - Starting model training...
+2024-12-21 15:30:02,025 - INFO - Training model for shipping_fee...
+2024-12-21 15:30:02,289 - INFO - Model for shipping_fee has been trained.
+2024-12-21 15:30:02,292 - INFO - Evaluation Results: Shipping Fee - MAE: 1.65, RMSE: 3.77, R²: 0.64
+2024-12-21 15:30:02,296 - INFO - Waiting to check for new files...
+2024-12-21 15:33:14,288 - INFO - Checking for new files in MinIO...
+2024-12-21 15:33:14,314 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv', 'batch_9_20241221_144732.csv']
+2024-12-21 15:33:14,358 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:33:14,358 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 15:33:14,390 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:33:14,390 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 15:33:14,420 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:33:14,420 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 15:33:14,448 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:33:14,448 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 15:33:14,486 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:33:14,486 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 15:33:14,525 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:33:14,525 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 15:33:14,553 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:33:14,553 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 15:33:14,585 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:33:14,585 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 15:33:14,590 - INFO - Columns in batch_9_20241221_144732.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:33:14,590 - INFO - Training model on combined data...
+2024-12-21 15:33:14,590 - INFO - Starting model training...
+2024-12-21 15:33:14,597 - INFO - Training model for shipping_fee...
+2024-12-21 15:33:14,627 - INFO - Model for shipping_fee has been trained.
+2024-12-21 15:33:14,630 - INFO - Evaluation Results: Shipping Fee - MAE: 0.00, RMSE: 0.00, R²: 1.00
+2024-12-21 15:33:14,631 - INFO - Waiting to check for new files...
+2024-12-21 15:38:14,643 - INFO - Checking for new files in MinIO...
+2024-12-21 15:38:14,708 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv']
+2024-12-21 15:38:14,761 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:38:14,762 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 15:38:14,799 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:38:14,799 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 15:38:14,841 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:38:14,841 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 15:38:14,879 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:38:14,879 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 15:38:14,912 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:38:14,912 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 15:38:14,980 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:38:14,980 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 15:38:15,019 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:38:15,019 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 15:38:15,051 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:38:15,051 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 15:38:15,051 - INFO - Waiting to check for new files...
+2024-12-21 15:38:25,260 - INFO - Checking for new files in MinIO...
+2024-12-21 15:38:25,270 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv']
+2024-12-21 15:38:25,299 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:38:25,329 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:38:25,360 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:38:25,387 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:38:25,415 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:38:25,444 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:38:25,487 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:38:25,517 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:38:25,521 - INFO - Training model on combined data...
+2024-12-21 15:38:25,521 - INFO - Starting model training...
+2024-12-21 15:38:25,548 - INFO - Training model for shipping_fee...
+2024-12-21 15:38:25,795 - INFO - Model for shipping_fee has been trained.
+2024-12-21 15:38:25,798 - INFO - Evaluation Results: Shipping Fee - MAE: 1.66, RMSE: 3.81, R²: 0.64
+2024-12-21 15:38:25,804 - INFO - Waiting to check for new files...
+2024-12-21 15:43:15,063 - INFO - Checking for new files in MinIO...
+2024-12-21 15:43:15,112 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv']
+2024-12-21 15:43:15,174 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:43:15,174 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 15:43:15,204 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:43:15,204 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 15:43:15,230 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:43:15,230 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 15:43:15,260 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:43:15,260 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 15:43:15,287 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:43:15,287 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 15:43:15,313 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:43:15,313 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 15:43:15,362 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:43:15,362 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 15:43:15,391 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:43:15,391 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 15:43:15,391 - INFO - Waiting to check for new files...
+2024-12-21 15:43:25,816 - INFO - Checking for new files in MinIO...
+2024-12-21 15:43:25,860 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv']
+2024-12-21 15:43:25,910 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:43:25,910 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 15:43:25,942 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:43:25,942 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 15:43:25,971 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:43:25,971 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 15:43:26,000 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:43:26,001 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 15:43:26,029 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:43:26,030 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 15:43:26,069 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:43:26,069 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 15:43:26,098 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:43:26,098 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 15:43:26,125 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:43:26,125 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 15:43:26,126 - INFO - Waiting to check for new files...
+2024-12-21 15:48:15,400 - INFO - Checking for new files in MinIO...
+2024-12-21 15:48:15,517 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv']
+2024-12-21 15:48:15,589 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:48:15,589 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 15:48:15,622 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:48:15,622 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 15:48:15,658 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:48:15,658 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 15:48:15,688 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:48:15,688 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 15:48:15,714 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:48:15,714 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 15:48:15,750 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:48:15,750 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 15:48:15,777 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:48:15,777 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 15:48:15,804 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:48:15,804 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 15:48:15,804 - INFO - Waiting to check for new files...
+2024-12-21 15:48:26,137 - INFO - Checking for new files in MinIO...
+2024-12-21 15:48:26,156 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv']
+2024-12-21 15:48:26,369 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:48:26,369 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 15:48:26,434 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:48:26,434 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 15:48:26,491 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:48:26,491 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 15:48:26,542 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:48:26,542 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 15:48:26,574 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:48:26,574 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 15:48:26,605 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:48:26,605 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 15:48:26,636 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:48:26,636 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 15:48:26,667 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:48:26,667 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 15:48:26,667 - INFO - Waiting to check for new files...
+2024-12-21 15:53:15,815 - INFO - Checking for new files in MinIO...
+2024-12-21 15:53:15,863 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv']
+2024-12-21 15:53:15,915 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:53:15,915 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 15:53:15,944 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:53:15,944 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 15:53:15,972 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:53:15,973 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 15:53:16,000 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:53:16,000 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 15:53:16,026 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:53:16,026 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 15:53:16,051 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:53:16,051 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 15:53:16,077 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:53:16,077 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 15:53:16,103 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:53:16,103 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 15:53:16,103 - INFO - Waiting to check for new files...
+2024-12-21 15:53:26,678 - INFO - Checking for new files in MinIO...
+2024-12-21 15:53:26,700 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv']
+2024-12-21 15:53:26,757 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:53:26,757 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 15:53:26,788 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:53:26,788 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 15:53:26,827 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:53:26,827 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 15:53:26,856 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:53:26,856 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 15:53:26,885 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:53:26,885 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 15:53:26,926 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:53:26,926 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 15:53:26,957 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:53:26,957 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 15:53:26,985 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:53:26,985 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 15:53:26,985 - INFO - Waiting to check for new files...
+2024-12-21 15:58:16,115 - INFO - Checking for new files in MinIO...
+2024-12-21 15:58:16,152 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv']
+2024-12-21 15:58:16,198 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:58:16,198 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 15:58:16,251 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:58:16,251 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 15:58:16,288 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:58:16,289 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 15:58:16,317 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:58:16,317 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 15:58:16,353 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:58:16,353 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 15:58:16,381 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:58:16,381 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 15:58:16,410 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:58:16,410 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 15:58:16,513 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:58:16,513 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 15:58:16,513 - INFO - Waiting to check for new files...
+2024-12-21 15:58:26,997 - INFO - Checking for new files in MinIO...
+2024-12-21 15:58:27,019 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv']
+2024-12-21 15:58:27,081 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:58:27,081 - INFO - No new data in batch: batch_1_20241221_133753.csv. Skipping.
+2024-12-21 15:58:27,112 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:58:27,112 - INFO - No new data in batch: batch_2_20241221_134506.csv. Skipping.
+2024-12-21 15:58:27,141 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:58:27,141 - INFO - No new data in batch: batch_3_20241221_135350.csv. Skipping.
+2024-12-21 15:58:27,181 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:58:27,181 - INFO - No new data in batch: batch_4_20241221_140208.csv. Skipping.
+2024-12-21 15:58:27,209 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:58:27,209 - INFO - No new data in batch: batch_5_20241221_141049.csv. Skipping.
+2024-12-21 15:58:27,237 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:58:27,238 - INFO - No new data in batch: batch_6_20241221_141930.csv. Skipping.
+2024-12-21 15:58:27,276 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:58:27,276 - INFO - No new data in batch: batch_7_20241221_142813.csv. Skipping.
+2024-12-21 15:58:27,304 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 15:58:27,305 - INFO - No new data in batch: batch_8_20241221_143803.csv. Skipping.
+2024-12-21 15:58:27,305 - INFO - Waiting to check for new files...
+2024-12-21 16:00:42,301 - INFO - Checking for new files in MinIO...
+2024-12-21 16:00:42,309 - INFO - Objects in bucket: ['batch_1_20241221_133753.csv', 'batch_1_20241221_160039.csv', 'batch_2_20241221_134506.csv', 'batch_3_20241221_135350.csv', 'batch_4_20241221_140208.csv', 'batch_5_20241221_141049.csv', 'batch_6_20241221_141930.csv', 'batch_7_20241221_142813.csv', 'batch_8_20241221_143803.csv']
+2024-12-21 16:00:42,342 - INFO - Columns in batch_1_20241221_133753.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 16:00:42,348 - WARNING - The file batch_1_20241221_160039.csv is empty. Skipping.
+2024-12-21 16:00:42,377 - INFO - Columns in batch_2_20241221_134506.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 16:00:42,418 - INFO - Columns in batch_3_20241221_135350.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 16:00:42,447 - INFO - Columns in batch_4_20241221_140208.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 16:00:42,490 - INFO - Columns in batch_5_20241221_141049.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 16:00:42,532 - INFO - Columns in batch_6_20241221_141930.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 16:00:42,563 - INFO - Columns in batch_7_20241221_142813.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 16:00:42,606 - INFO - Columns in batch_8_20241221_143803.csv: ['b2c_c2c', 'seller_id', 'declared_handling_days', 'shipment_method_id', 'item_zip', 'buyer_zip', 'category_id', 'item_price', 'quantity', 'weight', 'package_size', 'zip_distance', 'shipping_fee', 'delivery_date', 'acceptance_date', 'timestamp']
+2024-12-21 16:00:42,611 - INFO - Training model on combined data...
+2024-12-21 16:00:42,611 - INFO - Starting model training...
+2024-12-21 16:00:42,640 - INFO - Training model for shipping_fee...
+2024-12-21 16:00:42,890 - INFO - Model for shipping_fee has been trained.
+2024-12-21 16:00:42,894 - INFO - Evaluation Results: Shipping Fee - MAE: 1.66, RMSE: 3.81, R²: 0.64
+2024-12-21 16:00:42,897 - INFO - Waiting to check for new files...

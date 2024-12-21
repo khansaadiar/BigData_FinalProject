@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Shipping Fee Prediction</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Shipping Fee Prediction</h1>
+        <form id="prediction-form">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" step="0.01" id="weight" name="weight" required>
+
+            <label for="item_price">Item Price:</label>
+            <input type="number" step="0.01" id="item_price" name="item_price" required>
+
+            <label for="shipment_method_id">Shipment Method ID:</label>
+            <input type="number" id="shipment_method_id" name="shipment_method_id" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <label for="declared_handling_days">Declared Handling Days:</label>
+            <input type="number" id="declared_handling_days" name="declared_handling_days" required>
+
+            <label for="zip_distance">Zip Distance (km):</label>
+            <input type="number" step="0.01" id="zip_distance" name="zip_distance" required>
+
+            <label for="category_id">Category ID:</label>
+            <input type="number" id="category_id" name="category_id" required>
+
+            <button type="button" id="input-data-btn">Input Data</button>
+            <button type="submit">Predict</button>
+            <button type="reset" id="reset-btn">Reset</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        // Input Data Button Handler
+        document.getElementById("input-data-btn").addEventListener("click", () => {
+            fetch("/input_data")
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const row = data.data;
+                        document.getElementById("weight").value = row.weight;
+                        document.getElementById("item_price").value = row.item_price;
+                        document.getElementById("shipment_method_id").value = row.shipment_method_id;
+                        document.getElementById("quantity").value = row.quantity;
+                        document.getElementById("declared_handling_days").value = row.declared_handling_days;
+                        document.getElementById("zip_distance").value = row.zip_distance;
+                        document.getElementById("category_id").value = row.category_id;
+                    } else {
+                        console.error(data.error);
+                        alert(data.error);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching input data:', error);
+                });
+        });
+
+        document.getElementById("prediction-form").addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(e.target);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+
+            fetch("/predict", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data),
+            })
+            .then(response => response.json())
+            .then(data => {
+                const resultDiv = document.getElementById("result");
+                if (data.success) {
+                    resultDiv.innerText = `Predicted Shipping Fee: $${data.shipping_fee}`;
+                } else {
+                    resultDiv.innerText = `Error: ${data.error}`;
+                }
+            })
+            .catch(error => {
+                console.error('Error during prediction:', error);
+            });
+        });
+
+        document.getElementById("reset-btn").addEventListener("click", () => {
+            document.getElementById("result").innerText = "";
+        });
+    </script>
+</body>
+</html>
