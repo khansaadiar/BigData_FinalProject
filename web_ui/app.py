@@ -6,6 +6,7 @@ import logging
 import threading
 import time
 from datetime import datetime
+import random
 
 app = Flask(__name__)
 
@@ -93,27 +94,36 @@ def predict():
         zip_distance = float(data["zip_distance"])
         category_id = int(data["category_id"])
 
+        # Generate random values for fields that should not be zero
+        shipping_fee = round(random.uniform(1.0, 100.0), 2)  # Placeholder for shipping fee
+        carrier_min_estimate = random.randint(1, 7)
+        carrier_max_estimate = random.randint(carrier_min_estimate + 1, carrier_min_estimate + 5)
+        item_zip = random.randint(10000, 99999)
+        buyer_zip = random.randint(10000, 99999)
+        package_size = random.randint(1, 10)
+        record_number = len(dataset) + 1  # Assuming this is the new record number
+
         # Prepare the data to match the CSV structure
         new_data = {
-            "b2c_c2c": 0,
-            "seller_id": 0,
+            "b2c_c2c": 0,  # You can change this to a more appropriate random value if needed
+            "seller_id": random.randint(1, 10000000),  # Random seller ID
             "declared_handling_days": declared_handling_days,
             "acceptance_scan_timestamp": datetime.now().isoformat() + '-07:00',
             "shipment_method_id": shipment_method_id,
-            "shipping_fee": 0.0,  # Placeholder, will be updated
-            "carrier_min_estimate": 0,
-            "carrier_max_estimate": 0,
-            "item_zip": 0,
-            "buyer_zip": 0,
+            "shipping_fee": shipping_fee,  # Placeholder, will be updated
+            "carrier_min_estimate": carrier_min_estimate,
+            "carrier_max_estimate": carrier_max_estimate,
+            "item_zip": item_zip,
+            "buyer_zip": buyer_zip,
             "category_id": category_id,
             "item_price": item_price,
             "quantity": quantity,
             "payment_datetime": datetime.now().isoformat() + '-07:00',
             "delivery_date": datetime.now().date(),
             "weight": weight,
-            "package_size": 0,
-            "record_number": 0,
-            "carrier_average_estimate": 0,
+            "package_size": package_size,
+            "record_number": record_number,
+            "carrier_average_estimate": round(random.uniform(1.0, 10.0), 2),
             "zip_distance": zip_distance,
             "acceptance_date": datetime.now().date(),
             "payment_date": datetime.now().date()

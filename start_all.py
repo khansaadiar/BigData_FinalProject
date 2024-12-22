@@ -48,11 +48,18 @@ if __name__ == "__main__":
             print("Semua batch sudah siap. Memulai Training dan App...")
             # Jalankan train.py dan app.py setelah data siap
             training_process = subprocess.Popen(['python', 'train.py'])
+
+            # Memberikan waktu tambahan agar aplikasi web dapat terhubung dengan benar
+            time.sleep(5)  # Tunggu beberapa detik sebelum memulai app.py
+
+            # Jalankan app.py
             app_process = subprocess.Popen(['python', app_script])
 
-            # Tunggu sampai training dan app selesai
+            # Tunggu sampai app.py selesai berjalan
+            app_process.wait()  # Tunggu sampai app.py selesai (untuk mengecek kalau dia aktif)
+
+            # Tunggu sampai training selesai
             training_process.wait()
-            app_process.wait()
 
     except KeyboardInterrupt:
         print("Menghentikan semua script...")
